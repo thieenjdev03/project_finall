@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="shortcut icon" type="image/png" href="/img/favicon.ico"/>
+    <script src="https://kit.fontawesome.com/0607d6f524.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div class="main">
         <div class="header">
-            <i class="fa-thin fa-cart-shopping"></i>
             <h1 class="store-name-top">ThieenJ Store Chuyên Bán Hàng Chính Hãng 100% Sỉ & Lẻ HCM </h1>
             <div class="navbar">
-                <a href="/index.html"><i class="fa fa-fw fa-home"></i>Trang Chủ</a>
+                <a href="/index.html"><i class="fa fa-fw fa-home"></i> Trang Chủ</a>
                 <div class="dropdown">
                     <button class="dropbtn">Giày Sneaker 
                       <i class="fa fa-caret-down"></i>
@@ -25,11 +26,12 @@
                       <a href="/direct/adidas.html">Adidas</a>
                       <a href="/direct/nike.html">Nike</a>
                     </div>
-                  </div> 
+                </div> 
                 <a href="/direct/clothes.html">Quần Áo</a>
                 <a href="/direct/balo.html">Túi-Balo</a>
-                <a href="/direct/accs.html">Phụ Kiện</a>
-                </div>
+                <a href="/direct/accs.html">Phụ Kiện</a>                
+            </div>
+            <a href="/direct/cart.html"><img src="/img/cart/cart-shopping.webp" alt="HTML tutorial" style="position:absolute;bottom:2px;right:10px;width:32px;height:32px"></a>
         </div>
             <!-- End menu-bar -->
         <div class="sliders">
@@ -39,86 +41,166 @@
     </div>
     <div class="container">
         <div class="center">
-            <h1 class = "rcm-products-title">Thương Hiệu MLB</h1>
+            <div class = "rcm-products-title">
+            <h1>Thương Hiệu MLB</h1>
+            <div >
+            <a class="link-to-detail" href="/direct/mlb.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            </div>
             <div class="mlb">
                 <div class="product-card">
-                    <img style = "height: 250px;width: auto;" src="/img/mlb/linner-begie-products.webp" alt="" class="image-products">
-                    <p class="products-name">Giày MLB Chunky Liner Màu Begie 2022</p>
-                    <span class ="products-price">Giá : 3.000.000VNĐ</span><br>
-                    <button class = "btn-buy">Mua Ngay</button>
+                    <div class="border-card">
+                        <img style = "width: auto;" src="/img/mlb/linner-begie-products.webp" alt="" class="image-products">
+                        <p class="products-name">Giày MLB Chunky Liner Màu Begie 2022</p>
+                        <div class="product-price">       
+                            <span>Giá : 3.000.000VNĐ</span>
+                        </div><br>
+                        <div class="btn-position">
+                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                            <button class = "btn-add">Thêm giỏ hàng</button>
+                        </div>                    
+                    </div>
                 </div>
                 <div class="product-card">
-                    <img style = "height: 250px;width: auto;" src="/img/mlb/linner-black-products.webp" alt="" class="image-products">
-                    <p class="products-name">Giày MLB Chunky Liner Màu Đen 2022</p>
-                    <span class ="products-price">Giá : 3.000.000VNĐ</span><br>
-                    <button class = "btn-buy">Mua Ngay</button>
+                    <div class="border-card">
+                        <img style = "width: auto;" src="/img/mlb/linner-black-products.webp" alt="" class="image-products">
+                        <p class="products-name">Giày MLB Chunky Liner Màu Đen 2022</p>
+                        <div class="product-price">       
+                            <span>Giá : 3.000.000VNĐ</span><br>
+                        </div><br>
+                        <div class="btn-position">
+                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                            <button class = "btn-add">Thêm giỏ hàng</button>
+                        </div>                    
+                    </div>
                 </div>
                 <div class="product-card">
-                    <img style = "height: 250px;width: auto;" src="/img/mlb/linner-green-products.webp" alt="" class="image-products">
-                    <p class="products-name">Giày MLB Chunky Liner Màu Xanh GREEN 2022</p>
-                    <span class ="products-price">Giá : 3.000.000VNĐ</span><br>
-                    <button class = "btn-buy">Mua Ngay</button>
+                    <div class="border-card">
+                        <img style = "width: auto;" src="/img/mlb/linner-green-products.webp" alt="" class="image-products">
+                        <p class="products-name">Giày MLB Chunky Liner Màu Xanh GREEN 2022</p>
+                        <div class="product-price">       
+                            <span>Giá : 3.000.000VNĐ</span><br>
+                        </div>
+                        <div class="btn-position">
+                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                            <button class = "btn-add">Thêm giỏ hàng</button>
+                        </div>                   
+                     </div>
                 </div>
                 <div class="product-card">
-                    <img style = "height: 250px;width: auto;" src="/img/mlb/linner-gum-products.jpeg" alt="" class="image-products">
-                    <p class="products-name">Giày MLB Chunky Liner Màu GUM 2022</p>
-                    <span class ="products-price">Giá : 3.000.000VNĐ</span><br>
-                    <button class = "btn-buy">Mua Ngay</button>
+                    <div class="border-card">
+                        <img style = "width: auto;" src="/img/mlb/linner-gum-products.jpeg" alt="" class="image-products">
+                        <p class="products-name">Giày MLB Chunky Liner Màu GUM 2022</p>
+                        <div class="product-price">       
+                            <span>Giá : 3.000.000VNĐ</span><br>
+                        </div>
+                        <div class="btn-position">
+                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                            <button class = "btn-add">Thêm giỏ hàng</button>
+                        </div>                    
+                    </div>
                 </div>
                 <div class="product-card">
-                    <img style = "height: 250px;width: auto;" src="/img/mlb/linner-begie-products.webp" alt="" class="image-products">
-                    <p class="products-name">Giày MLB Chunky Liner Màu Begie 2022</p>
-                    <span class ="products-price">Giá : 3.000.000VNĐ</span><br>
-                    <button class = "btn-buy">Mua Ngay</button>
+                         <img style = "width: auto;" src="/img/mlb/linner-begie-products.webp" alt="" class="image-products">
+                        <p class="products-name">Giày MLB Chunky Liner Màu Begie 2022</p>
+                        <div class="product-price">       
+                            <span>Giá : 3.000.000VNĐ</span><br>
+                        </div>
+                        <div class="btn-position">
+                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                            <button class = "btn-add">Thêm giỏ hàng</button>
+                        </div>                    
+                    </div>
                 </div>
                 </div>
-            <h1 class = "rcm-products-title">Thương Hiệu NIKE</h1>
+                <div class = "rcm-products-title">
+                    <h1>Thương Hiệu NIKE</h1>
+                    <div >
+                    <a class="link-to-detail" href="/direct/nike.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                    </div>
                 <div class="nike">
                     <div class="product-card">
-                        <img style = "height: 250px;width: auto;" src="/img/nike/nike-af1-gc.webp" alt="" class="image-products">
-                        <p class="products-name">Giày NIKE AF1 Gucci</p>
-                        <span class ="products-price">Giá : 3.990.000VNĐ</span><br>
-                        <button class = "btn-buy">Mua Ngay</button>
+                        <div class="border-card">
+                            <img style = "width:auto" src="/img/nike/nike-af1-gc.webp" alt="" class="image-products">
+                            <p class="products-name">Giày NIKE AF1 Gucci</p>
+                            <span class ="products-price">Giá : 3.990.000VNĐ</span><br>
+                        <div class="btn-position">
+                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                            <button class = "btn-add">Thêm giỏ hàng</button>
+                        </div>                        
+                    </div>
                     </div>
                     <div class="product-card">
-                        <img style = "height: 250px;width: auto;" src="/img/nike/nike-af1-sf.webp" alt="" class="image-products">
-                        <p class="products-name">Giày NIKE AF1 Sunflower</p>
-                        <span class ="products-price">Giá : 2.990.000VNĐ</span><br>
-                        <button class = "btn-buy">Mua Ngay</button>
+                        <div class="border-card">
+                            <img style = "width: auto;" src="/img/nike/nike-af1-sf.webp" alt="" class="image-products">
+                            <p class="products-name">Giày NIKE AF1 Sunflower</p>
+                            <span class ="products-price">Giá : 2.990.000VNĐ</span><br>
+                            <div class="btn-position">
+                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                    <button class = "btn-add">Thêm giỏ hàng</button>
+                            </div>                        </div>
                     </div>
                     <div class="product-card">
-                        <img style = "height: 250px;width: auto;" src="/img/nike/nike-dunk-pd.webp" alt="" class="image-products">
-                        <p class="products-name">Giày NIKE Dunk Panda</p>
-                        <span class ="products-price">Giá : 6.990.000VNĐ</span><br>
-                        <button class = "btn-buy">Mua Ngay</button>
+                        <div class="border-card">
+                            <img style = "width: auto;" src="/img/nike/nike-dunk-pd.webp" alt="" class="image-products">
+                            <p class="products-name">Giày NIKE Dunk Panda</p>
+                            <span class ="products-price">Giá : 6.990.000VNĐ</span><br>
+                            <div class="btn-position">
+                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                    <button class = "btn-add">Thêm giỏ hàng</button>
+                            </div>                        </div>
                     </div>
                 </div>
-                <h1 class = "rcm-products-title">Thương Hiệu Adidas .....</h1>
+                <div class = "rcm-products-title">
+                    <h1>Thương Hiệu ADIDAS</h1>
+                    <div >
+                    <a class="link-to-detail" href="/direct/adidas.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                    </div>
                <div class="adidas">
                    <div class="product-card">
-                       <img style = "height: 250px;width: auto;" src="/img/adidas/ad-eq-bl.webp" alt="" class="image-products">
-                       <p class="products-name">Giày ADIDAS EQ21 BLACK</p>
-                       <span class ="products-price">Giá : 1.490.000VNĐ</span><br>
-
-                       <button class = "btn-buy">Mua Ngay</button>
+                    <div class="border-card">
+                        <img style = "width: auto;" src="/img/adidas/ad-eq-bl.webp" alt="" class="image-products">
+                        <p class="products-name">Giày ADIDAS EQ21 BLACK</p>
+                        <span class ="products-price">Giá : 1.490.000VNĐ</span><br>
+                        <div class="btn-position">
+                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                            <button class = "btn-add">Thêm giỏ hàng</button>
+                        </div>                    </div>
                    </div>
                    <div class="product-card">
-                       <img style = "height: 250px;width: auto;" src="/img/adidas/ad-ub-org.webp" alt="" class="image-products">
-                       <p class="products-name">Giày ADIDAS ULTRABOOST ORGANE</p>
-                       <span class ="products-price">Giá : 2.500.000VNĐ</span><br>
-                       <button class = "btn-buy">Mua Ngay</button>
+                    <div class="border-card">
+                        <img style = "width: auto;" src="/img/adidas/ad-ub-org.webp" alt="" class="image-products">
+                        <p class="products-name">Giày ADIDAS ULTRABOOST ORGANE</p>
+                        <span class ="products-price">Giá : 2.500.000VNĐ</span><br>
+                        <div class="btn-position">
+                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                            <button class = "btn-add">Thêm giỏ hàng</button>
+                        </div>
+                    </div>
                    </div>
                    <div class="product-card">
-                       <img style = "height: 250px;width: auto;" src="/img/adidas/ad-ub-wh.jpg" alt="" class="image-products">
-                       <p class="products-name">Giày ADIDAS ULTRABOOST WHITE</p>
-                       <span class ="products-price">Giá : 2.500.000VNĐ</span><br>
-                       <button class = "btn-buy">Mua Ngay</button>
+                    <div class="border-card">
+                        <img style = "width: auto;" src="/img/adidas/ad-ub-wh.jpg" alt="" class="image-products">
+                        <p class="products-name">Giày ADIDAS ULTRABOOST WHITE</p>
+                        <span class ="products-price">Giá : 2.500.000VNĐ</span><br>
+                        <div class="btn-position">
+                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                            <button class = "btn-add">Thêm giỏ hàng</button>
+                        </div>
+                    </div>
                    </div>
                    <div class="product-card">
-                       <img style = "height: 250px;width: auto;" src="/img/adidas/ad-yz-bluetint.webp" alt="" class="image-products">
-                       <p class="products-name">Giày ADIDAS YEEZY V2 BLUETINT</p>
-                       <span class ="products-price">Giá : 9.500.000VNĐ</span><br>
-                       <button class = "btn-buy">Mua Ngay</button>
+                    <div class="border-card">
+                        <img style = "width: auto;" src="/img/adidas/ad-yz-bluetint.webp" alt="" class="image-products">
+                        <p class="products-name">Giày ADIDAS YEEZY V2 BLUETINT</p>
+                        <span class ="products-price">Giá : 9.500.000VNĐ</span><br>
+                        <div class="btn-position">
+                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                            <button class = "btn-add">Thêm giỏ hàng</button>
+                        </div>
+                    </div>
                    </div>
                </div>
         </div>

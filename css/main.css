@@ -1,30 +1,30 @@
 *{
-  margin:0px;
-  padding: 0;
+margin:0px;
+padding: 0;
 }
 html{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .main{
 }
 .header{
-  height: 74px;
-  position: relative;
-  width: 100%;
+height: 74px;
+position: relative;
+width: 100%;
 }
 .fa-thin fa-cart-shopping{
-  z-index: 1;
-  position: absolute;
-  color:ghostwhite;
-  font-size: 15px;
+z-index: 1;
+position: absolute;
+color:ghostwhite;
+font-size: 15px;
 }
 .store-name-top{
-  text-align: center;
-  background-color: #DADED4;
-  padding: 6px 0px;
-  font-size: 15px;
-  font-family:Arial, Helvetica, sans-serif;
-  color:black;
+text-align: center;
+background-color: #DADED4;
+padding: 6px 0px;
+font-size: 15px;
+font-family:Arial, Helvetica, sans-serif;
+color:black;
 }
 .navbar {
 overflow: hidden;
@@ -32,85 +32,86 @@ background-color: #333;
 }
 
 .navbar a {
-  float:left ;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+float:left ;
+font-size: 16px;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
 }
 
 .dropdown {
-  float: left;
-  overflow: hidden;
+float: left;
+overflow: hidden;
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+font-size: 16px;  
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color:gainsboro;
-  color:black;
+background-color:gainsboro;
+color:black;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
 }
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+.dropdown-content > a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
+.dropdown-content > a:hover {
+background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+display: block;
 }
 
 #cart-content .cart-icons{
-  position: absolute;
-  right: 15px;
-  top:36px;
-  font-size: 40px;
-  color:#DADED4;
+position: absolute;
+right: 15px;
+top:36px;
+font-size: 40px;
+color:#DADED4;
 }
 #cart-content .cart-title{
-  position: absolute;
-  right: 65px;
-  top:40px;
-  font-size: 16px;
-  color:#DADED4;
+position: absolute;
+right: 65px;
+top:40px;
+font-size: 16px;
+color:#DADED4;
 }
 
 .sliders{
 margin-bottom: -10px;
 }
 .sliders .image-slider{
-  height: 600px;
+  height: 400px;
   width: 100%;
 }
 
 .container .mlb,.nike,.adidas{
+justify-content: center;
 display:flex;
 max-height: 1000px;
 flex-wrap: wrap;
@@ -119,39 +120,85 @@ width: 100%;
 .container .center{
 
 }
+.rcm-products-title{
+position: relative;
+  margin: 0;
+  background: #d7202c;
+  width: 100%;
+  height: 40px;
+  }
+.rcm-products-title > h1{
+position: absolute;
+left:10px;
+top:0px;
+font-size: 18px;
+color: #fff;
+line-height: 40px;
+
+}
+.rcm-products-title a{
+position: absolute;
+right: 25px;
+top:0px;
+font-size: 12px;
+color: #fff;
+line-height: 40px;
+text-decoration: none;
+  }
 .container .product-card{
+position: relative;
 text-align: center;
 margin: 20px 20px;
-height: 380px;
-width: 15%;
+height: 400px;
+width: 16%;
+border: 1px solid black;
+border-radius: 15%;
 -webkit-background-clip: padding-box; /* for Safari */
 background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */    border-radius: 20px;
+margin-top: 15px;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
-.container .rcm-products-title{
-margin: 0;
-font-size: 22px;
-background: #d7202c;
-padding: 10px 20px;
-color: #fff;
-width: 100%;
-line-height: 1.;
-display: inline-block;
+
+.product-card .image-products{
+  margin-top: 10px;
+  width: 80%!important; 
 }
-.container .product-card img{
-width:200px;
-}
-.container .product-card span{
-  color:#ff3300;
-  font-size:18px;
+.product-card span{
+font-weight: 700;
+color:#ff3300;
+font-size:18px;
 }
 .container .products-name{
-  margin-bottom: 10px;
+font-weight: 600;
+margin-bottom: 10px;
 }
-.btn-buy{  
-  margin-top: 10px;
-  padding: 10px 15px; 
+.btn-buy{
+padding: 8px 6px; 
+background-color:#333 ;
+color:mintcream;
+font-size: 16px;
+font-weight: 700;
+border-radius: 10%;
+border: none;
+
+}
+.btn-add{
+  padding: 8px 6px; 
   background-color:#333 ;
   color:mintcream;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10%;
+  border: none;
+}
+.btn-position{
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  margin-top: 10px;
 
+}
+.btn-add:hover,.btn-buy:hover{
+  background-color:#ff3300 ;
 }
 

@@ -8,53 +8,70 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="shortcut icon" type="image/png" href="/img/favicon.ico"/>
+    <script src="https://kit.fontawesome.com/0607d6f524.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div class="main">
         <div class="header">
-            <i class="fa-thin fa-cart-shopping"></i>
             <h1 class="store-name-top">ThieenJ Store Chuyên Bán Hàng Chính Hãng 100% Sỉ & Lẻ HCM </h1>
             <div class="navbar">
-                <a href="/index.html"><i class="fa fa-fw fa-home"></i>Trang Chủ</a>
+                <a href="/index.html"><i class="fa fa-fw fa-home"></i> Trang Chủ</a>
                 <div class="dropdown">
                     <button class="dropbtn">Giày Sneaker 
                       <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
                       <a href="/direct/mlb.html">MLB</a>
-                      <a href="#">Adidas</a>
-                      <a href="#">Nike</a>
+                      <a href="/direct/adidas.html">Adidas</a>
+                      <a href="/direct/nike.html">Nike</a>
                     </div>
-                  </div> 
-                <a href="#home">Quần Áo</a>
-                <a href="#news">Túi-Balo</a>
-                <a href="#news">Phụ Kiện</a>
-                </div>
+                </div> 
+                <a href="/direct/clothes.html">Quần Áo</a>
+                <a href="/direct/balo.html">Túi-Balo</a>
+                <a href="/direct/accs.html">Phụ Kiện</a>                
+            </div>
+            <a href="/direct/cart.html"><img src="/img/cart/cart-shopping.webp" alt="HTML tutorial" style="position:absolute;bottom:2px;right:10px;width:32px;height:32px"></a>
         </div>
+            <!-- End menu-bar -->
         <div class="sliders">
             <img src="/img/banner-top.jpeg" alt="" class="image-slider">
         </div>
+    <!-- END Header -->
     </div>
     <div class="container">
-        <h1 style="text-align:center;" class = "rcm-products-title">Thương Hiệu NIKE</h1>
-        <div style="justify-content:center ;" class="nike">
+        <h1 style="text-align:center;line-height:40px;color:#fff;font-size:20px" class = "rcm-products-title">Thương Hiệu NIKE</h1>
+        <div class="nike">
             <div class="product-card">
-                <img style = "height: 250px;width: auto;" src="/img/nike/nike-af1-gc.webp" alt="" class="image-products">
-                <p class="products-name">Giày NIKE AF1 Gucci</p>
-                <span class ="products-price">Giá : 3.990.000VNĐ</span><br>
-                <button class = "btn-buy">Mua Ngay</button>
+                <div class="border-card">
+                    <img style = "width:auto" src="/img/nike/nike-af1-gc.webp" alt="" class="image-products">
+                    <p class="products-name">Giày NIKE AF1 Gucci</p>
+                    <span class ="products-price">Giá : 3.990.000VNĐ</span><br>
+                <div class="btn-position">
+                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                    <button class = "btn-add">Thêm giỏ hàng</button>
+                </div>                        
+            </div>
             </div>
             <div class="product-card">
-                <img style = "height: 250px;width: auto;" src="/img/nike/nike-af1-sf.webp" alt="" class="image-products">
-                <p class="products-name">Giày NIKE AF1 Sunflower</p>
-                <span class ="products-price">Giá : 2.990.000VNĐ</span><br>
-                <button class = "btn-buy">Mua Ngay</button>
+                <div class="border-card">
+                    <img style = "width: auto;" src="/img/nike/nike-af1-sf.webp" alt="" class="image-products">
+                    <p class="products-name">Giày NIKE AF1 Sunflower</p>
+                    <span class ="products-price">Giá : 2.990.000VNĐ</span><br>
+                    <div class="btn-position">
+                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                        <button class = "btn-add">Thêm giỏ hàng</button>
+                    </div>                        </div>
             </div>
             <div class="product-card">
-                <img style = "height: 250px;width: auto;" src="/img/nike/nike-dunk-pd.webp" alt="" class="image-products">
-                <p class="products-name">Giày NIKE Dunk Panda</p>
-                <span class ="products-price">Giá : 6.990.000VNĐ</span><br>
-                <button class = "btn-buy">Mua Ngay</button>
+                <div class="border-card">
+                    <img style = "width: auto;" src="/img/nike/nike-dunk-pd.webp" alt="" class="image-products">
+                    <p class="products-name">Giày NIKE Dunk Panda</p>
+                    <span class ="products-price">Giá : 6.990.000VNĐ</span><br>
+                    <div class="btn-position">
+                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                        <button class = "btn-add">Thêm giỏ hàng</button>
+                    </div>                        </div>
             </div>
         </div>
     </div>
