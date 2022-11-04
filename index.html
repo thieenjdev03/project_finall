@@ -7,6 +7,7 @@
     <title>ThieenJ Store - Sneaker House</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/modal.css">
     <link rel="shortcut icon" type="image/png" href="/img/favicon.ico"/>
     <script src="https://kit.fontawesome.com/0607d6f524.js" crossorigin="anonymous"></script>
 
@@ -31,7 +32,36 @@
                 <a href="/direct/balo.html">Túi-Balo</a>
                 <a href="/direct/accs.html">Phụ Kiện</a>                
             </div>
-            <a href="/direct/cart.html"><img src="/img/cart/cart-shopping.webp" alt="HTML tutorial" style="position:absolute;bottom:2px;right:10px;width:32px;height:32px"></a>
+            <button style="position:fixed;bottom:20px;right:10px;width: 4%;height:10%" id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Giỏ Hàng
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
         </div>
             <!-- End menu-bar -->
         <div class="sliders">
@@ -47,19 +77,29 @@
             <a class="link-to-detail" href="/direct/mlb.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
             </div>
             </div>
-            <div class="mlb">
+            <!-- Main-product-of-brand -->
+            <div class="mlb"> 
                 <div class="product-card">
+                    <!-- Begin Product-card over the card -->
                     <div class="border-card">
+                        <!-- Begin Border card  -->
                         <img style = "width: auto;" src="/img/mlb/linner-begie-products.webp" alt="01" class="image-products">
+                        <!-- Begin product-info classs  -->
                         <div class="product-info">       
                         <p class="products-name">Giày MLB Chunky Liner Màu Begie 2022</p>
                             <span>Giá : 3.000.000VNĐ</span>
                         </div><br>
+                        <!-- End product-info classs  -->
+
+                        <!-- Begin Button -->
                         <div class="btn-position">
                             <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                             <button class = "btn-add">Thêm giỏ hàng</button>
-                        </div>                    
+                        </div>   
+                        <!-- End Button -->
+                        <!-- End Border Card - Viền  -->
                     </div>
+                    <!-- End Product-card over the card -->
                 </div>
                 <div class="product-card">
                     <div class="border-card">
