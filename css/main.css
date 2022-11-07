@@ -108,7 +108,7 @@
     width: 100%;
   }
   
-  .container .mlb,.nike,.adidas{
+  .container .mlb,.nike,.adidas,.clothes{
   justify-content: center;
   display:flex;
   max-height: 2000px;
