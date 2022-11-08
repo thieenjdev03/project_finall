@@ -33,10 +33,9 @@
   
   .modal-footer {
     display: flex;
-    border-top: 1px solid #aaaaaa;
     padding: 1rem;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-direction: center;
+    justify-content:center;
     border-top: 1px solid #aaaaaa;
     padding: 1rem;
   }
@@ -61,15 +60,13 @@
   }
   
   .btn-secondary {
-    color: #292b2c;
-    background-color: #fff;
-    border-color: #ccc;
+    color: white;
+    background-color: #EB5757;
   }
   
   .btn-primary {
     color: #fff;
-    background-color: #0275d8;
-    border-color: #0275d8;
+    background-color: #000;
   }
   
   .modal-header {

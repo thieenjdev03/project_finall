@@ -29,7 +29,8 @@
             modal.style.display = "none";
           }
           order.onclick = function () {
-            alert("Cảm ơn bạn đã thanh toán đơn hàng")
+            alert("Xác Nhận Thanh Toán Giỏ Hàng Của Bạn!!")
+
           }
           window.onclick = function (event) {
             if (event.target == modal) {
@@ -128,4 +129,7 @@
       updatecart()
     })
   }
-  
+  //Tks For your order aleart 
+  function checkout_success(){
+    alert("Bạn Đã Thanh Toán Thành Công!!!");
+  }

@@ -109,12 +109,15 @@
   }
   
   .container .mlb,.nike,.adidas,.clothes{
-  justify-content: center;
   display:flex;
   max-height: 2000px;
   flex-wrap: wrap;
   width: 100%;
   }
+  .mlb,.nike,.adidas,.clothes{
+    justify-content: center;
+  }
+
   .rcm-products-title{
     position: relative;
     margin: 0;
@@ -145,7 +148,7 @@
   text-align: center;
   margin: 20px 20px;
   height: 400px;
-  width: 16%;
+  width: 17%;
   /* border: 1px solid black; */
   border-radius: 15%;
   -webkit-background-clip: padding-box; /* for Safari */
@@ -198,7 +201,7 @@
     border-radius: 10%;
     border: none;
   }
-  .btn-position{
+  .product-card .btn-position{
     position: absolute;
     bottom: 20px;
     width: 100%;
