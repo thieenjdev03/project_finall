@@ -129,7 +129,7 @@
       updatecart()
     })
   }
-  //Tks For your order aleart 
+  //Tks For your order_aleart 
   function checkout_success(){
     alert("Bạn Đã Thanh Toán Thành Công!!!");
   }

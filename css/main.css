@@ -108,16 +108,12 @@
     width: 100%;
   }
   
-  .container .mlb,.nike,.adidas,.clothes{
+  .mlb , .nike ,.adidas , .clothes{
   display:flex;
-  max-height: 2000px;
+  max-height: 3000px;
   flex-wrap: wrap;
   width: 100%;
   }
-  .mlb,.nike,.adidas,.clothes{
-    justify-content: center;
-  }
-
   .rcm-products-title{
     position: relative;
     margin: 0;
