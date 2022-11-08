@@ -7,6 +7,7 @@
     <title>ThieenJ Store - Sneaker House</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/modal.css">
     <link rel="shortcut icon" type="image/png" href="/img/favicon.ico"/>
     <script src="https://kit.fontawesome.com/0607d6f524.js" crossorigin="anonymous"></script>
 
@@ -14,7 +15,8 @@
 <body>
     <div class="main">
         <div class="header">
-            <h1 class="store-name-top">ThieenJ Store Chuyên Bán Hàng Chính Hãng 100% Sỉ & Lẻ HCM </h1>
+            
+<marquee direction="right"><h1 style="background-color:white;" class="store-name-top">ThieenJ Store Chuyên Bán Hàng Chính Hãng 100% Sỉ & Lẻ HCM </h1></marquee>
             <div class="navbar">
                 <a href="/index.html"><i class="fa fa-fw fa-home"></i> Trang Chủ</a>
                 <div class="dropdown">
@@ -29,9 +31,35 @@
                 </div> 
                 <a href="/direct/clothes.html">Quần Áo</a>
                 <a href="/direct/balo.html">Túi-Balo</a>
-                <a href="/direct/info.html">Thông tin</a>                
+                <a href="/direct/info.html">Thông Tin</a>                
             </div>
-            <a href="/direct/cart.html"><img src="/img/cart/cart-shopping.webp" alt="HTML tutorial" style="position:absolute;bottom:2px;right:10px;width:32px;height:32px"></a>
+            <button style="position:fixed;bottom:20px;right:10px;width: 4%;height:10%" id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Giỏ Hàng
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                            <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                        </div>
+                    </div>
+                    </div>
+
+                </div> 
         </div>
             <!-- End menu-bar -->
         <div class="sliders">
@@ -41,7 +69,13 @@
     </div>
     <div class="container">
         <div class="center">
-            <h1 style="text-align:center;line-height:40px;color:#fff;font-size:20px" class = "rcm-products-title">Thương Hiệu MLB - Major League Baseball</h1>
+            <div class = "rcm-products-title">
+            <h1>Thương Hiệu MLB</h1>
+            <div >
+            <a class="link-to-detail" href="/direct/mlb.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            </div>
+            <!-- Main-product-of-brand -->
             <div class="clothes">
                 <div class="product-card">
                     <div class="border-card">
@@ -108,6 +142,10 @@
                         </div>                    
                     </div>
             </div>
-        </div>
+    </div>
 </body>
+<script src="/js/main.js">
+
+</script>
+    
 </html>
