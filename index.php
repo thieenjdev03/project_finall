@@ -1,3 +1,6 @@
+<?php 
+    require("database.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +9,8 @@
     <meta name="viewport˜" content="width=device-width, initial-scale=1.0">
     <title>ThieenJ Store - Sneaker House</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
@@ -27,9 +30,9 @@
                       <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                      <a href="/direct/mlb.html">MLB</a>
-                      <a href="/direct/adidas.html">Adidas</a>
-                      <a href="/direct/nike.html">Nike</a>
+                      <a href="direct/mlb.html">MLB</a>
+                      <a href="direct/adidas.html">Adidas</a>
+                      <a href="direct/nike.html">Nike</a>
                     </div>
                 </div> 
                 <a href="/direct/clothes.html">Quần Áo</a>
@@ -107,7 +110,7 @@
                 </div>
                 <div class="product-card">
                     <div class="border-card">
-                        <img style = "width: auto;" src="/img/mlb/linner-black-products.webp" alt="02" class="image-products">
+                        <img style = "width: auto;" src="img/mlb/linner-black-products.webp" alt="02" class="image-products">
                         <div class="product-info">       
                             <p class="products-name">Giày MLB Chunky Liner Màu Đen 2022</p>
                             <div class="product-price">       

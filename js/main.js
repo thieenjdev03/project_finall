@@ -86,7 +86,7 @@
       var price = product.getElementsByClassName("product-price")[0].innerText
       addItemToCart(title, price, img)
       // Khi thêm sản phẩm vào giỏ hàng thì sẽ hiển thị modal
-      modal.style.display = "block";
+      // modal.style.display = "block";
       
       updatecart()
     })
