@@ -20,9 +20,9 @@ echo"<script>alert('Thanh cong')</script>";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport˜" content="width=device-width, initial-scale=1.0">
     <title>ThieenJ Store - Sneaker House</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/cashout_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cashout_page.css">
     <link rel="shortcut icon" type="image/png" href="/img/favicon.ico"/>
     <script src="https://kit.fontawesome.com/0607d6f524.js" crossorigin="anonymous"></script>
 
@@ -46,7 +46,7 @@ echo"<script>alert('Thanh cong')</script>";
                 <a href="/direct/clothes.html">Quần Áo</a>
                 <a href="/direct/balo.html">Túi-Balo</a>
             </div>
-            <a href="/direct/cart.html"><img src="/img/cart/cart-shopping.webp" alt="HTML tutorial" style="position:absolute;bottom:2px;right:10px;width:32px;height:32px"></a>
+            <!-- <a href="/direct/cart.html"><img src="/img/cart/cart-shopping.webp" alt="HTML tutorial" style="position:absolute;bottom:2px;right:10px;width:32px;height:32px"></a> -->
         </div>
             <!-- End menu-bar -->
     <!-- END Header -->

@@ -1,6 +1,3 @@
-<?php 
-    require("database.php");
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="/img/favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
     <script src="https://kit.fontawesome.com/0607d6f524.js" crossorigin="anonymous"></script>
 
 </head>
@@ -30,13 +27,13 @@
                       <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                      <a href="direct/mlb.html">MLB</a>
-                      <a href="direct/adidas.html">Adidas</a>
-                      <a href="direct/nike.html">Nike</a>
+                      <a href="mlb.html">MLB</a>
+                      <a href="adidas.html">Adidas</a>
+                      <a href="nike.html">Nike</a>
                     </div>
                 </div> 
-                <a href="/direct/clothes.html">Quần Áo</a>
-                <a href="/direct/balo.html">Túi-Balo</a>
+                <a href="clothes.html">Quần Áo</a>
+                <a href="balo.html">Túi-Balo</a>
             </div>
             <button style="position:fixed;bottom:20px;right:10px;width: 4%;height:10%" id="cart">
                 <i class="fa fa-shopping-basket" aria-hidden="true"></i>
@@ -59,7 +56,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary close-footer">Đóng</button>
-                            <a href="/direct/cashout_page.html" class="checkout-btn">
+                            <a href="cashout_page.php" class="checkout-btn">
                                 <button type="button" class="btn btn-primary order">Thanh Toán</button>
                             </a>  
                         </div>
@@ -70,7 +67,7 @@
         </div>
             <!-- End menu-bar -->
         <div class="sliders">
-            <img src="/img/banner-top.jpeg" alt="" class="image-slider">
+            <img src="img/banner-top.jpeg" alt="" class="image-slider">
         </div>
     <!-- END Header -->
     </div>
@@ -79,7 +76,7 @@
             <div class = "rcm-products-title">
             <h1>Thương Hiệu MLB</h1>
             <div >
-            <a class="link-to-detail" href="/direct/mlb.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
+            <a class="link-to-detail" href="mlb.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
             </div>
             </div>
             <!-- Main-product-of-brand -->
@@ -88,7 +85,7 @@
                     <!-- Begin Product-card over the card -->
                     <div class="border-card">
                         <!-- Begin Border card  -->
-                        <img style = "width: auto;" src="/img/mlb/linner-begie-products.webp" alt="01" class="image-products">
+                        <img style = "width: auto;" src="img/mlb/linner-begie-products.webp" alt="01" class="image-products">
                         <!-- Begin product-info classs  -->
                         <div class="product-info">       
                             <p class="products-name">Giày MLB Chunky Liner Màu Begie 2022</p>
@@ -100,7 +97,7 @@
 
                         <!-- Begin Button -->
                         <div class="btn-position">
-                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                            <button onclick="window.location.href='cashout_page.php'" class = "btn-buy">Mua Ngay</button>
                             <button class = "btn-add">Thêm giỏ hàng</button>
                         </div>   
                         <!-- End Button -->
@@ -118,14 +115,14 @@
                             </div>
                             </div><br>
                         <div class="btn-position">
-                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                            <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                             <button class = "btn-add">Thêm giỏ hàng</button>
                         </div>                    
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="border-card">
-                        <img style = "width: auto;" src="/img/mlb/linner-green-products.webp" alt="03" class="image-products">
+                        <img style = "width: auto;" src="img/mlb/linner-green-products.webp" alt="03" class="image-products">
                         <div class="product-info">       
                             <p class="products-name">Giày MLB Chunky Liner Màu Xanh GREEN 2022</p>
                             <div class="product-price">       
@@ -133,14 +130,14 @@
                             </div>
                             </div><br>
                         <div class="btn-position">
-                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                            <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                             <button class = "btn-add">Thêm giỏ hàng</button>
                         </div>                   
                      </div>
                 </div>
                 <div class="product-card">
                     <div class="border-card">
-                        <img style = "width: auto;" src="/img/mlb/linner-gum-products.jpeg" alt="04" class="image-products">
+                        <img style = "width: auto;" src="img/mlb/linner-gum-products.jpeg" alt="04" class="image-products">
                         <div class="product-info">       
                             <p class="products-name">Giày MLB Chunky Liner Màu GUM 2022</p>
                             <div class="product-price">       
@@ -148,29 +145,29 @@
                             </div>
                             </div><br>
                         <div class="btn-position">
-                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                            <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                             <button class = "btn-add">Thêm giỏ hàng</button>
                         </div>                    
                     </div>
-                </div>
+                <!-- </div>
                     <div class="product-card">
                         <div class="border-card">
-                            <img style = "width: auto;" src="/img/mlb/mlb-acc-bbblue-bag.png" alt="06" class="image-products">
+                            <img style = "width: auto;" src="img/mlb/mlb-acc-bbblue-bag.png" alt="06" class="image-products">
                             <div class="product-info">       
                                 <p class="products-name">Túi Lồng MLB Monogram Baby Blue *2022*</p>
                                 <div class="product-price"> 
                                     <span>Giá : 99$</span>
                                 </div> 
                             </div><br>
-                        </div>
+                        </div> -->
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                     </div>
                     <div class="product-card">
                         <div class="border-card">
-                            <img style = "width: auto;" src="/img/mlb//mlb-acc-bbblue.png" alt="07" class="image-products">
+                            <img style = "width: auto;" src="img/mlb//mlb-acc-bbblue.png" alt="07" class="image-products">
                             <div class="product-info">       
                             <p class="products-name">Túi Đeo Chéo MLB Monogram Baby Blue *2022*</p>
                             <div class="product-price"> 
@@ -178,14 +175,14 @@
                             </div> 
                             </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="border-card">
-                            <img style = "width: auto;" src="/img/mlb/mlb-acc-wh-blu.jpg" alt="08" class="image-products">
+                            <img style = "width: auto;" src="img/mlb/mlb-acc-wh-blu.jpg" alt="08" class="image-products">
                             <div class="product-info">       
                             <p class="products-name">Túi Đeo Chéo MLB Monogram Trắng Xanh 2 Ngăn *2022*</p>
                             <div class="product-price"> 
@@ -193,14 +190,14 @@
                             </div>
                             </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="border-card">
-                            <img style = "width:auto;" src="/img/mlb/mlb-acc-white-tote.jpg" alt="09" class="image-products">
+                            <img style = "width:auto;" src="img/mlb/mlb-acc-white-tote.jpg" alt="09" class="image-products">
                             <div class="product-info">       
                             <p class="products-name">Túi Tote MLB Basic Trắng</p>
                             <div class="product-price"> 
@@ -208,14 +205,14 @@
                             </div>
                             </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="border-card">
-                            <img style = "width: auto;" src="/img/mlb/mlb-acc-ylw.jpg" alt="010" class="image-products">
+                            <img style = "width: auto;" src="img/mlb/mlb-acc-ylw.jpg" alt="010" class="image-products">
                             <div class="product-info">       
                             <p class="products-name">Túi Xách MLB Màu Đen</p>
                             <div class="product-price"> 
@@ -223,14 +220,14 @@
                             </div>
                             </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                         </div>
                     </div>               
                     <div class="product-card">
                         <div class="border-card">
-                            <img style = "width: auto;" src="/img/mlb/mlb-polo-môn.jpg"alt="011" class="image-products">
+                            <img style = "width: auto;" src="img/mlb/mlb-polo-môn.jpg"alt="011" class="image-products">
                             <div class="product-info">       
                             <p class="products-name">Áo Polo MLB Monogram Black</p>
                             <div class="product-price"> 
@@ -238,14 +235,14 @@
                             </div>
                             </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="border-card">
-                            <img style = "width: auto;" src="/img/mlb/mlb-sw-mono-blu.jpg"alt="012" class="image-products">
+                            <img style = "width: auto;" src="img/mlb/mlb-sw-mono-blu.jpg"alt="012" class="image-products">
                             <div class="product-info">       
                             <p class="products-name">Áo Sweater MLB Monogram Blue</p>
                             <div class="product-price"> 
@@ -253,14 +250,14 @@
                             </div>
                             </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="border-card">
-                            <img style = "width: auto;" src="/img/mlb/mlb-sw-mono-wh.webp"alt="013" class="image-products">
+                            <img style = "width: auto;" src="img/mlb/mlb-sw-mono-wh.webp"alt="013" class="image-products">
                                 <div class="product-info">       
                                 <p class="products-name">Áo Sweater MLB Monogram Brown</p>
                                 <div class="product-price"> 
@@ -268,14 +265,14 @@
                                 </div>
                         </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>
                     </div>
                     </div>
                     <div class="product-card">
                         <div class="border-card">
-                            <img style = "width: auto;" src="/img/mlb/mlb-trackpaint-mono-bl.jpg"alt="013" class="image-products">
+                            <img style = "width: auto;" src="img/mlb/mlb-trackpaint-mono-bl.jpg"alt="013" class="image-products">
                                 <div class="product-info">       
                                 <p class="products-name">Quần Jogger Monogram MLB Đen</p>
                                 <div class="product-price"> 
@@ -283,14 +280,14 @@
                                 </div>
                         </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>
                     </div>
                     </div>
                     <div class="product-card">
                         <div class="border-card">
-                            <img style = "width: auto;" src="/img/mlb/mlb-short-jeans.jpg"alt="013" class="image-products">
+                            <img style = "width: auto;" src="img/mlb/mlb-short-jeans.jpg"alt="013" class="image-products">
                                 <div class="product-info">       
                                 <p class="products-name">Quần Short Jeans Xanh</p>
                                 <div class="product-price"> 
@@ -298,7 +295,7 @@
                                 </div>
                         </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>
                     </div>
@@ -307,7 +304,7 @@
                     <div class = "rcm-products-title">
                         <h1>Thương Hiệu ADIDAS</h1>
                         <div >
-                        <a class="link-to-detail" href="/direct/adidas.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
+                        <a class="link-to-detail" href="adidas.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                         </div>
                         <!-- Main-product-of-brand -->
@@ -316,7 +313,7 @@
                                 <!-- Begin Product-card over the card -->
                                 <div class="border-card">
                                     <!-- Begin Border card  -->
-                                    <img style = "width: auto;" src="/img/adidas/ad-eq-bl.webp" alt="21" class="image-products">
+                                    <img style = "width: auto;" src="img/adidas/ad-eq-bl.webp" alt="21" class="image-products">
                                     <!-- Begin product-info classs  -->
                                     <div class="product-info">       
                                         <p class="products-name">Giày Adidas EQ21 Black</p>
@@ -328,7 +325,7 @@
             
                                     <!-- Begin Button -->
                                     <div class="btn-position">
-                                        <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                        <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                         <button class = "btn-add">Thêm giỏ hàng</button>
                                     </div>   
                                     <!-- End Button -->
@@ -338,7 +335,7 @@
                             </div>
                             <div class="product-card">
                                 <div class="border-card">
-                                    <img style = "width: auto;" src="/img/adidas/ad-jacket-3str.webp" alt="02" class="image-products">
+                                    <img style = "width: auto;" src="img/adidas/ad-jacket-3str.webp" alt="02" class="image-products">
                                     <div class="product-info">       
                                         <p class="products-name">Áo Khoác Adidas 3 Sọc</p>
                                         <div class="product-price">       
@@ -346,14 +343,14 @@
                                         </div>
                                         </div><br>
                                     <div class="btn-position">
-                                        <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                        <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                         <button class = "btn-add">Thêm giỏ hàng</button>
                                     </div>                    
                                 </div>
                             </div>
                             <div class="product-card">
                                 <div class="border-card">
-                                    <img style = "width: auto;" src="/img/adidas/ad-trackpaint-3str.webp" alt="03" class="image-products">
+                                    <img style = "width: auto;" src="img/adidas/ad-trackpaint-3str.webp" alt="03" class="image-products">
                                     <div class="product-info">       
                                         <p class="products-name">Quần Adidas Track Paints 3 sọc</p>
                                         <div class="product-price">       
@@ -361,14 +358,14 @@
                                         </div>
                                         </div><br>
                                     <div class="btn-position">
-                                        <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                        <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                         <button class = "btn-add">Thêm giỏ hàng</button>
                                     </div>                   
                                  </div>
                             </div>
                             <div class="product-card">
                                 <div class="border-card">
-                                    <img style = "width: auto;" src="/img/adidas/ad-tshirt-3str.webp" alt="04" class="image-products">
+                                    <img style = "width: auto;" src="img/adidas/ad-tshirt-3str.webp" alt="04" class="image-products">
                                     <div class="product-info">       
                                         <p class="products-name">Áo Thun Adidas 3 sọc</p>
                                         <div class="product-price">       
@@ -376,13 +373,13 @@
                                         </div>
                                         </div><br>
                                     <div class="btn-position">
-                                        <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                        <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                         <button class = "btn-add">Thêm giỏ hàng</button>
                                     </div>                    
                                 </div>
                             </div>
-                            <div class="product-card">
-                                     <img style = "width: auto;" src="/img/adidas/ad-ub-org.webp" alt="05" class="image-products">
+                            <!-- <div class="product-card">
+                                     <img style = "width: auto;" src="img/adidas/ad-ub-org.webp" alt="05" class="image-products">
                                      <div class="product-info">       
                                         <p class="products-name">Giày Adidas Ultraboost Orange</p>
                                         <div class="product-price">       
@@ -390,12 +387,12 @@
                                         </div>
                                         </div><br>
                                     <div class="btn-position">
-                                        <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                        <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                         <button class = "btn-add">Thêm giỏ hàng</button>
                                     </div>                    
-                            </div>  
+                            </div>   -->
                             <div class="product-card">
-                                <img style = "width: auto;" src="/img/adidas/ad-ub-wh.jpg" alt="05" class="image-products">
+                                <img style = "width: auto;" src="img/adidas/ad-ub-wh.jpg" alt="05" class="image-products">
                                 <div class="product-info">       
                                    <p class="products-name">Giày Adidas Ultraboost White</p>
                                    <div class="product-price">       
@@ -403,12 +400,12 @@
                                    </div>
                                    </div><br>
                                <div class="btn-position">
-                                   <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                   <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                    <button class = "btn-add">Thêm giỏ hàng</button>
                                </div>                    
                        </div>  
                        <div class="product-card">
-                        <img style = "width: auto;" src="/img/adidas/ad-yz-bluetint.webp" alt="05" class="image-products">
+                        <img style = "width: auto;" src="img/adidas/ad-yz-bluetint.webp" alt="05" class="image-products">
                         <div class="product-info">       
                            <p class="products-name">Giày Adidas Yeezy Bluetint</p>
                            <div class="product-price">       
@@ -416,7 +413,7 @@
                            </div>
                            </div><br>
                        <div class="btn-position">
-                           <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                           <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                            <button class = "btn-add">Thêm giỏ hàng</button>
                        </div>                    
                </div>  
@@ -424,7 +421,7 @@
                             <div class = "rcm-products-title">
                                 <h1>Thương Hiệu NIKE</h1>
                                 <div >
-                                <a class="link-to-detail" href="/direct/nike.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
+                                <a class="link-to-detail" href="nike.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
                                 </div>
                                 </div>
                                 <!-- Main-product-of-brand -->
@@ -433,7 +430,7 @@
                                         <!-- Begin Product-card over the card -->
                                         <div class="border-card">
                                             <!-- Begin Border card  -->
-                                            <img style = "width: auto;" src="/img/nike/nike-af1-gc.webp" alt="11" class="image-products">
+                                            <img style = "width: auto;" src="img/nike/nike-af1-gc.webp" alt="11" class="image-products">
                                             <!-- Begin product-info classs  -->
                                             <div class="product-info">       
                                                 <p class="products-name">Giày Nike AirForce 1 Gucci</p>
@@ -445,7 +442,7 @@
                     
                                             <!-- Begin Button -->
                                             <div class="btn-position">
-                                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                                 <button class = "btn-add">Thêm giỏ hàng</button>
                                             </div>   
                                             <!-- End Button -->
@@ -455,7 +452,7 @@
                                     </div>
                                     <div class="product-card">
                                         <div class="border-card">
-                                            <img style = "width: auto;" src="/img/nike/nike-af1-sf.webp" alt="12" class="image-products">
+                                            <img style = "width: auto;" src="img/nike/nike-af1-sf.webp" alt="12" class="image-products">
                                             <div class="product-info">       
                                                 <p class="products-name">Giày Nike Air Force 1 Sunflower</p>
                                                 <div class="product-price">       
@@ -463,14 +460,14 @@
                                                 </div>
                                                 </div><br>
                                             <div class="btn-position">
-                                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                                 <button class = "btn-add">Thêm giỏ hàng</button>
                                             </div>                    
                                         </div>
                                     </div>
                                     <div class="product-card">
                                         <div class="border-card">
-                                            <img style = "width: auto;" src="/img/nike/nike-dunk-pd.webp" alt="03" class="image-products">
+                                            <img style = "width: auto;" src="img/nike/nike-dunk-pd.webp" alt="03" class="image-products">
                                             <div class="product-info">       
                                                 <p class="products-name">Giày Nike Dunk Panda</p>
                                                 <div class="product-price">       
@@ -478,7 +475,7 @@
                                                 </div>
                                                 </div><br>
                                             <div class="btn-position">
-                                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                                 <button class = "btn-add">Thêm giỏ hàng</button>
                                             </div>                   
                                          </div>
@@ -518,7 +515,7 @@
         </div>
      </footer>
 </body>
-<script src="/js/main.js">
+<script src="js/main.js">
 
 </script>
     
