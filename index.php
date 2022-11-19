@@ -60,7 +60,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary close-footer">Đóng</button>
-                            <a href="cashout_page.php" class="checkout-btn">
+                            <a href="/direct/cashout_page.html" class="checkout-btn">
                                 <button type="button" class="btn btn-primary order">Thanh Toán</button>
                             </a>  
                         </div>
@@ -70,24 +70,30 @@
                 </div> 
         </div>
             <!-- End menu-bar -->
-            <div class="left-container">
-                <img src="/img/left&right-banner/Sale-label_PNG_pngimagesfree.com.png" alt="" class="logo-brand-left">
-                <img src="/img/left&right-banner/Adidas_Logo.svg.png" alt="" class="logo-brand-left"><br>
-                <img src="/img/left&right-banner/major-league-baseball-1-logo-png-transparent.png" alt="" class="logo-brand-left"><br>
-                <img src="/img/left&right-banner/Nike-Logo-Background-PNG-Image.png" alt="" class="logo-brand-left">
-            </div>    
-            <div class="right-container">
-                <img src="/img/left&right-banner/Sale-label_PNG_pngimagesfree.com.png" alt="" class="logo-brand-left">
-                <img src="/img/left&right-banner/Adidas_Logo.svg.png" alt="" class="logo-brand-left"><br>
-                <img src="/img/left&right-banner/major-league-baseball-1-logo-png-transparent.png" alt="" class="logo-brand-left"><br>
-                <img src="/img/left&right-banner/Nike-Logo-Background-PNG-Image.png" alt="" class="logo-brand-left">
-            </div>  
+            
         <div class="sliders">
-            <img src="img/banner-top.jpeg" alt="" class="image-slider">
+            <img src="img/01.png" alt="" class="image-slider">
+            <div class="slider-top-content">
+                <img src="/img/04.png" alt="" class="slider-top-content-img">
+                <img src="/img/06.png" alt="" class="slider-top-content-img">
+                <img src="/img/07.png" alt="" class="slider-top-content-img">
+            </div>
         </div>
-        
     </div>
     <div class="container">
+        <!-- <div class="left-container">
+            <img src="/img/left&right-banner/Sale-label_PNG_pngimagesfree.com.png" alt="" class="logo-brand-left">
+            <img src="/img/left&right-banner/Adidas_Logo.svg.png" alt="" class="logo-brand-left"><br>
+            <img src="/img/left&right-banner/major-league-baseball-1-logo-png-transparent.png" alt="" class="logo-brand-left"><br>
+            <img src="/img/left&right-banner/Nike-Logo-Background-PNG-Image.png" alt="" class="logo-brand-left">
+        </div>    
+        <div class="right-container">
+            <img src="/img/left&right-banner/Sale-label_PNG_pngimagesfree.com.png" alt="" class="logo-brand-left">
+            <img src="/img/left&right-banner/Adidas_Logo.svg.png" alt="" class="logo-brand-left"><br>
+            <img src="/img/left&right-banner/major-league-baseball-1-logo-png-transparent.png" alt="" class="logo-brand-left"><br>
+            <img src="/img/left&right-banner/Nike-Logo-Background-PNG-Image.png" alt="" class="logo-brand-left">
+        </div>   -->
+        <img src="/img/09.png" alt="" class="container-top-center-img">
         <div class="center">
             <div class = "rcm-products-title">
                 <h1>Thương Hiệu MLB</h1>
@@ -95,7 +101,7 @@
                 <a class="link-to-detail" href="/direct/mlb.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
                 </div>
             </div>
-            <!-- Main-product-of-brand -->r
+            <!-- Main-product-of-brand -->
             <div class="mlb"> 
                 <div class="product-card">
                     <!-- Begin Product-card over the card -->
@@ -111,7 +117,7 @@
                         </div><br>
                         <!-- End product-info classs  -->
 
-                        <!-- Begin Button -->ư
+                        <!-- Begin Button -->
                         <div class="btn-position">
                         <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                             <button class = "btn-add">Thêm giỏ hàng</button>
@@ -146,7 +152,7 @@
                             </div>
                             </div><br>
                         <div class="btn-position">
-                            <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                             <button class = "btn-add">Thêm giỏ hàng</button>
                         </div>                   
                      </div>
@@ -161,7 +167,7 @@
                             </div>
                             </div><br>
                         <div class="btn-position">
-                            <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                             <button class = "btn-add">Thêm giỏ hàng</button>
                         </div>                    
                     </div>
@@ -177,7 +183,7 @@
                             </div><br>
                         </div> -->
                             <div class="btn-position">
-                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                     </div>
@@ -191,7 +197,7 @@
                             </div> 
                             </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                         </div>
@@ -206,7 +212,7 @@
                             </div>
                             </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                         </div>
@@ -221,7 +227,7 @@
                             </div>
                             </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                         </div>
@@ -236,7 +242,7 @@
                             </div>
                             </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                         </div>
@@ -251,7 +257,7 @@
                             </div>
                             </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                         </div>
@@ -266,7 +272,7 @@
                             </div>
                             </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                         </div>
@@ -281,7 +287,7 @@
                                 </div>
                         </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>
                     </div>
@@ -296,7 +302,7 @@
                                 </div>
                         </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>
                     </div>
@@ -311,7 +317,7 @@
                                 </div>
                         </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>
                 </div>
@@ -342,7 +348,7 @@
             
                                     <!-- Begin Button -->
                                     <div class="btn-position">
-                                        <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                        <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                         <button class = "btn-add">Thêm giỏ hàng</button>
                                     </div>   
                                     <!-- End Button -->
@@ -359,7 +365,7 @@
                                         </div>
                                     </div><br>
                                     <div class="btn-position">
-                                        <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                        <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                         <button class = "btn-add">Thêm giỏ hàng</button>
                                     </div>                    
                                 </div>
@@ -374,7 +380,7 @@
                                         </div>
                                         </div><br>
                                     <div class="btn-position">
-                                        <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                        <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                         <button class = "btn-add">Thêm giỏ hàng</button>
                                     </div>                   
                                  </div>
@@ -389,7 +395,7 @@
                                         </div>
                                         </div><br>
                                     <div class="btn-position">
-                                        <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                        <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                         <button class = "btn-add">Thêm giỏ hàng</button>
                                     </div>                    
                                 </div>
@@ -403,7 +409,7 @@
                                    </div>
                                 </div><br>
                                <div class="btn-position">
-                                   <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                   <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                    <button class = "btn-add">Thêm giỏ hàng</button>
                                </div>   
                             </div>                 
@@ -416,7 +422,7 @@
                                         </div>
                                     </div><br>
                                     <div class="btn-position">
-                                        <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                        <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                         <button class = "btn-add">Thêm giỏ hàng</button>
                                     </div>                    
                         </div>  
@@ -445,7 +451,7 @@
                     
                                             <!-- Begin Button -->
                                             <div class="btn-position">
-                                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                                 <button class = "btn-add">Thêm giỏ hàng</button>
                                             </div>   
                                             <!-- End Button -->
@@ -463,7 +469,7 @@
                                                 </div>
                                             </div><br>
                                             <div class="btn-position">
-                                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                                 <button class = "btn-add">Thêm giỏ hàng</button>
                                             </div>                    
                                         </div>
@@ -478,7 +484,7 @@
                                                 </div>
                                             </div><br>
                                             <div class="btn-position">
-                                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
+                                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
                                                 <button class = "btn-add">Thêm giỏ hàng</button>
                                             </div>                   
                                         </div>

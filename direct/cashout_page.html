@@ -1,18 +1,4 @@
-<?php
-require("database.php");
-if(isset($_POST["submit"])){
-  $Hoten=$_POST["fname"];
-  $Email=$_POST["email"];
-  $DiaChi=$_POST["adr"];
-  $ThanhPho=$_POST["city"];
-  $Quan=$_POST["State"];
-if(isset($Hoten)&& isset($Email)&& isset($DiaChi)&& isset($ThanhPho) && isset($Quan));
-$sql="INSERT INTO `khachhang`( `HoTen`, `Email`, `DiaChi`, `ThanhPho`, `Quan`) 
-VALUES ('$Hoten','$Email','$DiaChi','$ThanhPho','$Quan')";
-mysqli_query($conn,$sql);
-echo"<script>alert('Thanh cong')</script>";
-}
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

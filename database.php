@@ -1,13 +1,14 @@
 <?php
-$servername="localhost";
-$username="root";
-$password="";
-$database="quanlysanpham";
+$servername = "localhost";
+$username = "username";
+$password = "password";
 
-$conn=mysqli_connect($servername,$username,$password,$database);
-if (!$conn){
-    die("Connect Fail:".mysqli_connect_error());
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
 }
-else
-    echo "Ket noi thanh cong"
+echo "Connected successfully";
 ?>
