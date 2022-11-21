@@ -47,19 +47,25 @@
           }
           // update cart 
           function updatecart() {
-              var cart_item = document.getElementsByClassName("cart-items")[0];
-              var cart_rows = cart_item.getElementsByClassName("cart-row");
-              var total = 0;
-              for (var i = 0; i < cart_rows.length; i++) {
-                var cart_row = cart_rows[i]
-                var price_item = cart_row.getElementsByClassName("cart-price ")[0]
-                var quantity_item = cart_row.getElementsByClassName("cart-quantity-input")[0]
-                var price = parseFloat(price_item.innerText)// chuyển một chuổi string sang number để tính tổng tiền.
-                var quantity = quantity_item.value // lấy giá trị trong thẻ input
-                total = total + (products-price * quantity)
+
+              let elList = document.querySelectorAll('.cart-row');
+              let result = 0;
+              for (let i in elList) {
+                if (i == 0) {
+                  continue
+                }
+                if (i == 'entries') {
+                  break;
+                }
+                let innterText = elList[i].querySelector('.cart-price').innerText;
+                let price$ = innterText.split(' ')[innterText.split(' ').length - 1];
+                let price = price$.split('$')[0];
+                result += Number(price);
               }
-              document.getElementsByClassName("cart-total-price")[0].innerText = total + 'VNĐ'
-              // Thay đổi text = total trong .cart-total-price.
+              let elTotal = document.querySelector('.cart-total-price');
+              if (elTotal != null) {
+                elTotal.innerText = result + " $";
+              }
             }
   // thay đổi số lượng sản phẩm
   var quantity_input = document.getElementsByClassName("cart-quantity-input");

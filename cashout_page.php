@@ -5,13 +5,34 @@ if(isset($_POST["submit"])){
   $Email=$_POST["email"];
   $DiaChi=$_POST["adr"];
   $ThanhPho=$_POST["city"];
-  $Quan=$_POST["State"];
-if(isset($Hoten)&& isset($Email)&& isset($DiaChi)&& isset($ThanhPho) && isset($Quan));
-$sql="INSERT INTO `khachhang`( `HoTen`, `Email`, `DiaChi`, `ThanhPho`, `Quan`) 
-VALUES ('$Hoten','$Email','$DiaChi','$ThanhPho','$Quan')";
-mysqli_query($conn,$sql);
-echo"<script>alert('Thanh cong')</script>";
+  // $Quan = isset($_POST['state']) ? $_POST['state'] : false;
+  $Quan = isset($_POST['state']) ? $_POST['state'] : false;
+  if ($Quan) {
+     echo htmlentities($_POST['state'], ENT_QUOTES, "UTF-8");
+  } else {
+    echo "task option is required";
+    exit; 
+  }
+  echo $Quan;
+  if(isset($Hoten)&& isset($Email)&& isset($DiaChi)&& isset($ThanhPho) && isset($Quan)){;
+
+    $data = [
+      'hoten' => $Hoten,
+      'email' => $Email,
+      'diaChi' => $DiaChi,
+      'thanhPho' => $ThanhPho,
+      'quan' => $Quan,
+    ];
+    $sql = "INSERT INTO khachhangs (Hoten, Email, DiaChi, ThanhPho, Quan) VALUES (:hoten, :email, :diaChi, :thanhPho, :quan)";
+    $stmt= $dbh->prepare($sql);
+    $stmt->execute($data);
+    
+    echo"<script>alert('Thanh cong')</script>";
+  }
 }
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,24 +50,26 @@ echo"<script>alert('Thanh cong')</script>";
 </head>
 <body>
     <div class="main">
-        <div class="header">
-            <h1 class="store-name-top">ThieenJ Store Chuyên Bán Hàng Chính Hãng 100% Sỉ & Lẻ HCM </h1>
-            <div class="navbar">
-                <a href="/index.html"><i class="fa fa-fw fa-home"></i> Trang Chủ</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Giày Sneaker 
-                      <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                      <a href="/direct/mlb.html">MLB</a>
-                      <a href="/direct/adidas.html">Adidas</a>
-                      <a href="/direct/nike.html">Nike</a>
-                    </div>
-                </div> 
-                <a href="/direct/clothes.html">Quần Áo</a>
-                <a href="/direct/balo.html">Túi-Balo</a>
-            </div>
-            <!-- <a href="/direct/cart.html"><img src="/img/cart/cart-shopping.webp" alt="HTML tutorial" style="position:absolute;bottom:2px;right:10px;width:32px;height:32px"></a> -->
+    <div class="header">
+            
+            <marquee direction="right"><h1 style="background-color:white;" class="store-name-top">ThieenJ Store Chuyên Bán Hàng Chính Hãng 100% Sỉ & Lẻ HCM </h1></marquee>
+                        <div class="navbar-top">
+                            <div class="navbar">
+                                <a href="/index.html"> <i class="fa fa-fw fa-home"></i>   Trang Chủ </a>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Giày Sneaker 
+                                      <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                      <a href="direct/mlb.html">MLB</a>
+                                      <a href="direct/adidas.html">Adidas</a>
+                                      <a href="direct/nike.html">Nike</a>
+                                    </div>
+                                </div> 
+                                <a href="direct/clothes.html">Quần Áo</a>
+                                <a href="direct/balo.html">Túi - Balo</a>
+                                <a href="direct/balo.html">Thông Tin</a>
+                            </div>
         </div>
             <!-- End menu-bar -->
     <!-- END Header -->
@@ -61,38 +84,38 @@ echo"<script>alert('Thanh cong')</script>";
           <div class="col-50">
             <h3 style="margin-bottom:20px ;">Thông Tin Khách Hàng: </h3>
             <label for="fname"><i class="fa fa-user"></i> Họ & tên: </label>
-            <input type="text" id="fname" name="firstname" placeholder="Nguyen Van A">
+            <input type="text" id="fname" name="fname" placeholder="Nguyen Van A">
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
             <input type="text" id="email" name="email" placeholder="nguyenvanA@example.com">
             <label for="adr"><i class="fa fa-address-card-o"></i> Địa Chỉ</label>
-            <input type="text" id="adr" name="address" placeholder="999 Phan Dang Lu,P1">
+            <input type="text" id="adr" name="adr" placeholder="999 Phan Dang Lu,P1">
             <label for="city"><i class="fa fa-institution"></i> Thành Phố</label>
             <input type="text" id="city" name="city" placeholder="TPHCM">
 
             <div class="row">
               <div class="col-50">
                 <label for="state">Quận</label>
-                <select type="" id="state" name="state" form="carform">
-                    <option value="Quận 1">Quận 1</option>
-                    <option value="Quận 2">Quận 2</option>
-                    <option value="Quận 3">Quận 3</option>
-                    <option value="Quận 4">Quận 4</option>
-                    <option value="Quận 5">Quận 5</option>
-                    <option value="Quận 6">Quận 6</option>
-                    <option value="Quận 7">Quận 7</option>
-                    <option value="Quận 8">Quận 8</option>
-                    <option value="Quận 9">Quận 9</option>
-                    <option value="Quận 10">Quận 10</option>
-                    <option value="Quận 11">Quận 11</option>
-                    <option value="Quận 12">Quận 12</option>
-                    <option value="Quận Bình Tân">Quận Bình Tân</option>
-                    <option value="Quận Bình Thạnh">Quận Bình Thạnh</option>
-                    <option value="Quận Tân Bình">Quận Tân Bình</option>
-                    <option value="Quận Tân Phú">Quận Tân Phú</option>
-                    <option value="Quận Thủ Đức">Quận Thủ Đức</option>                    
-                    <option value="Quận Phú Nhuận">Quận Phú Nhuận</option>
-                    <option value="Quận Hóc Môn">Quận Hóc Môn</option>
-                    <option value="Quận Gò Vấp">Quận Gò Vấp</option>                    
+                <select type="" id="state" name="state">
+                    <option value="1">Quận 1</option>
+                    <option value="2">Quận 2</option>
+                    <option value="3">Quận 3</option>
+                    <option value="4">Quận 4</option>
+                    <option value="5">Quận 5</option>
+                    <option value="6">Quận 6</option>
+                    <option value="7">Quận 7</option>
+                    <option value="8">Quận 8</option>
+                    <option value="9">Quận 9</option>
+                    <option value="10">Quận 10</option>
+                    <option value="11">Quận 11</option>
+                    <option value="12">Quận 12</option>
+                    <option value="13">Quận Bình Tân</option>
+                    <option value="14">Quận Bình Thạnh</option>
+                    <option value="15">Quận Tân Bình</option>
+                    <option value="16">Quận Tân Phú</option>
+                    <option value="17">Quận Thủ Đức</option>                    
+                    <option value="18">Quận Phú Nhuận</option>
+                    <option value="19">Quận Hóc Môn</option>
+                    <option value="20">Quận Gò Vấp</option>                    
                 </select>
             </div>
             </div>
@@ -107,45 +130,12 @@ echo"<script>alert('Thanh cong')</script>";
           <a href="/index.html"></a><input  type="submit" value="THANH TOÁN" class="btn" onclick="checkout_success()">
         </div> -->
         <div class="checkout-btn">
-          <button type="submit" name="submit">ThanhToan</button>
+          <button class="btn" type="submit" name="submit">Thanh toán</button>
           <!-- <a class="btn" onclick="checkout_success()" href="/index.html">THANH TOÁN</a> -->
         </div>
       </form>
     </div>
 </div>
-<footer class="footer">
-        <div class="container">
-         <div class="row">
-           <div class="footer-col">
-             <h4>Thông Tin Shop</h4>
-             <ul>
-               <li><a href="#">169 Phan Đăng Lưu, P1, Quận Phú Nhuận, HCM</a></li>
-               <li><a href="#"><i class="fa-sharp fa-solid fa-phone"></i> 0826426888</a></li>
-               <li><a href="#">thienctv03@gmail.com</a></li>
-             </ul>
-           </div>
-           <div class="footer-col">
-             <h4>Thông Tin Dev</h4>
-             <ul>
-               <li><a href="https://www.facebook.com/nvt101203/"> <i class="fa-sharp fa-solid fa-user"></i> Nguyễn Văn Thiện</a></li>
-               <li><a href="#"> <i class="fa-sharp fa-solid fa-id-card"></i> 2174802010394</a></li>
-               <li><a href="#"> <i class="fa-sharp fa-solid fa-envelope"></i> thien.2174802010394@vanlanguni.vn</a></li>
-               <li><a href="#"><i class="fa-sharp fa-solid fa-phone"></i> 0826426888</a></li>
-             </ul>
-           </div>
-           <div class="footer-col">
-            <h4>Thông Tin Dev</h4>
-            <ul>
-              <li><a href="https://www.facebook.com/coithichiu"> <i class="fa-sharp fa-solid fa-user"></i> Nguyễn Hữu Đức</a></li>
-              <li><a href="#"> <i class="fa-sharp fa-solid fa-id-card"></i> 2174802010384</a></li>
-              <li><a href="#"> <i class="fa-sharp fa-solid fa-envelope"></i> huuduc122003@gmail.com</a></li>
-              <li><a href="#"><i class="fa-sharp fa-solid fa-phone"></i>0336025684</a></li>
-            </ul>
-          </div>
-           </div>
-         </div>
-        </div>
-     </footer>
 <script src="/js/main.js"></script>
 </body>
 </html>

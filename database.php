@@ -1,14 +1,25 @@
+
+
 <?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password);
+/*** MySQL hostname ***/
+$hostname = 'localhost';
+/*** MySQL username ***/
+$username = 'root';
+/*** MySQL password ***/
+$password = '';
 
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+function testdb_connect ($hostname, $username, $password){
+    $dbh = new PDO("mysql:host=$hostname;dbname=quanlysanpham", $username, $password);
+    $dbh->exec("set names utf8mb4");
+    return $dbh;
 }
-echo "Connected successfully";
+
+try {
+    $dbh = testdb_connect ($hostname, $username, $password);
+} catch(PDOException $e) {
+    echo $e->getMessage();
+}
+
+
 ?>

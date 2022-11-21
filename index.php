@@ -8,7 +8,7 @@
     <title>ThieenJ Store - Sneaker House</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/modal.css">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
@@ -18,27 +18,30 @@
 </head>
 <body>
     <div class="main">
+
         <div class="header">
             
 <marquee direction="right"><h1 style="background-color:white;" class="store-name-top">ThieenJ Store Chuyên Bán Hàng Chính Hãng 100% Sỉ & Lẻ HCM </h1></marquee>
             <div class="navbar-top">
                 <div class="navbar">
-                    <a href="/index.html"><i class="fa fa-fw fa-home"></i> Trang Chủ</a>
+                    <a href="/index.php><i class="fa fa-fw fa-home"></i> Trang Chủ</a>
                     <div class="dropdown">
                         <button class="dropbtn">Giày Sneaker 
                           <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
-                          <a href="/direct/mlb.html">MLB</a>
-                          <a href="/direct/adidas.html">Adidas</a>
-                          <a href="/direct/nike.html">Nike</a>
+                          <a href="direct/mlb.html">MLB</a>
+                          <a href="direct/adidas.html">Adidas</a>
+                          <a href="direct/nike.html">Nike</a>
                         </div>
                     </div> 
-                    <a href="/direct/clothes.html">Quần Áo</a>
-                    <a href="/direct/balo.html">Túi - Balo</a>
-                    <a href="/direct/balo.html">Thông Tin</a>
+                    <a href="direct/clothes.html">Quần Áo</a>
+                    <a href="direct/balo.html">Túi - Balo</a>
+                    <a href="direct/balo.html">Thông Tin</a>
                 </div>
             </div>
+               <!-- End menu-bar -->
+            <!-- the modal -->
             <button style="position:fixed;bottom:20px;right:10px;width: 4%;height:10%" id="cart">
                 <i class="fa fa-shopping-basket" aria-hidden="true"></i>
                 Giỏ Hàng
@@ -56,27 +59,29 @@
                             <span class="cart-quantity cart-header cart-column">Số Lượng</span>
                         </div>
                         <div class="cart-items">
-
+                           
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary close-footer">Đóng</button>
-                            <a href="/direct/cashout_page.html" class="checkout-btn">
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <a href="cashout_page.php" class="checkout-btn">
                                 <button type="button" class="btn btn-primary order">Thanh Toán</button>
                             </a>  
-                        </div>
                     </div>
-                    </div>
-
-                </div> 
-        </div>
-            <!-- End menu-bar -->
+                </div>
+            </div>
+         
             
         <div class="sliders">
-            <img src="img/banner-top.jpeg" alt="" class="image-slider">
+            <img src="img/01.png" alt="" class="image-slider">
             <div class="slider-top-content">
-                <img src="/img/04.png" alt="" class="slider-top-content-img">
-                <img src="/img/06.png" alt="" class="slider-top-content-img">
-                <img src="/img/07.png" alt="" class="slider-top-content-img">
+                <img src="img/04.png" alt="" class="slider-top-content-img">
+                <img src="img/06.png" alt="" class="slider-top-content-img">
+                <img src="img/07.png" alt="" class="slider-top-content-img">
             </div>
         </div>
     </div>
@@ -93,12 +98,12 @@
             <img src="/img/left&right-banner/major-league-baseball-1-logo-png-transparent.png" alt="" class="logo-brand-left"><br>
             <img src="/img/left&right-banner/Nike-Logo-Background-PNG-Image.png" alt="" class="logo-brand-left">
         </div>   -->
-        <!-- <img src="/img/09.png" alt="" class="container-top-center-img"> -->
+        <img src="img/09.png" alt="" class="container-top-center-img">
         <div class="center">
             <div class = "rcm-products-title" >
                 <h1>Thương Hiệu MLB</h1>
                 <div >
-                <a class="link-to-detail" href="/direct/mlb.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
+                <a class="link-to-detail" href="direct/mlb.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
                 </div>
             </div>
             <!-- Main-product-of-brand -->
@@ -119,7 +124,7 @@
 
                         <!-- Begin Button -->
                         <div class="btn-position">
-                        <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                        <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                             <button class = "btn-add">Thêm giỏ hàng</button>
                         </div>   
                         <!-- End Button -->
@@ -137,7 +142,7 @@
                             </div>
                             </div><br>
                         <div class="btn-position">
-                        <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                        <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                             <button class = "btn-add">Thêm giỏ hàng</button>
                         </div>                    
                     </div>
@@ -152,7 +157,7 @@
                             </div>
                             </div><br>
                         <div class="btn-position">
-                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                            <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                             <button class = "btn-add">Thêm giỏ hàng</button>
                         </div>                   
                      </div>
@@ -167,7 +172,7 @@
                             </div>
                             </div><br>
                         <div class="btn-position">
-                            <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                            <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                             <button class = "btn-add">Thêm giỏ hàng</button>
                         </div>                    
                     </div>
@@ -183,7 +188,7 @@
                             </div><br>
                         </div> -->
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                     </div>
@@ -197,7 +202,7 @@
                             </div> 
                             </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                         </div>
@@ -212,7 +217,7 @@
                             </div>
                             </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                         </div>
@@ -227,7 +232,7 @@
                             </div>
                             </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                         </div>
@@ -242,7 +247,7 @@
                             </div>
                             </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                         </div>
@@ -257,7 +262,7 @@
                             </div>
                             </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                         </div>
@@ -272,7 +277,7 @@
                             </div>
                             </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>                    
                         </div>
@@ -287,7 +292,7 @@
                                 </div>
                         </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>
                     </div>
@@ -302,7 +307,7 @@
                                 </div>
                         </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>
                     </div>
@@ -317,7 +322,7 @@
                                 </div>
                         </div><br>
                             <div class="btn-position">
-                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                 <button class = "btn-add">Thêm giỏ hàng</button>
                             </div>
                 </div>
@@ -326,7 +331,7 @@
                     <div class = "rcm-products-title">
                         <h1>Thương Hiệu ADIDAS</h1>
                         <div >
-                        <a class="link-to-detail" href="/direct/adidas.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
+                        <a class="link-to-detail" href="direct/adidas.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                         </div>
                         <!-- Main-product-of-brand -->
@@ -348,7 +353,7 @@
             
                                     <!-- Begin Button -->
                                     <div class="btn-position">
-                                        <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                        <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                         <button class = "btn-add">Thêm giỏ hàng</button>
                                     </div>   
                                     <!-- End Button -->
@@ -365,7 +370,7 @@
                                         </div>
                                     </div><br>
                                     <div class="btn-position">
-                                        <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                        <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                         <button class = "btn-add">Thêm giỏ hàng</button>
                                     </div>                    
                                 </div>
@@ -379,8 +384,8 @@
                                             <span>Giá : 39$</span>
                                         </div>
                                         </div><br>
-                                    <div class="btn-position">
-                                        <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                    <div class="btn-position"></div>
+                                        <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                         <button class = "btn-add">Thêm giỏ hàng</button>
                                     </div>                   
                                  </div>
@@ -395,7 +400,7 @@
                                         </div>
                                         </div><br>
                                     <div class="btn-position">
-                                        <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                        <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                         <button class = "btn-add">Thêm giỏ hàng</button>
                                     </div>                    
                                 </div>
@@ -409,7 +414,7 @@
                                    </div>
                                 </div><br>
                                <div class="btn-position">
-                                   <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                   <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                    <button class = "btn-add">Thêm giỏ hàng</button>
                                </div>   
                             </div>                 
@@ -422,7 +427,7 @@
                                         </div>
                                     </div><br>
                                     <div class="btn-position">
-                                        <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                        <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                         <button class = "btn-add">Thêm giỏ hàng</button>
                                     </div>                    
                         </div>  
@@ -430,7 +435,7 @@
                             <div class = "rcm-products-title">
                                 <h1>Thương Hiệu NIKE</h1>
                                 <div >
-                                <a class="link-to-detail" href="/direct/nike.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
+                                <a class="link-to-detail" href="direct/nike.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
                                 </div>
                             </div>
                                 <!-- Main-product-of-brand -->
@@ -451,7 +456,7 @@
                     
                                             <!-- Begin Button -->
                                             <div class="btn-position">
-                                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                                 <button class = "btn-add">Thêm giỏ hàng</button>
                                             </div>   
                                             <!-- End Button -->
@@ -469,7 +474,7 @@
                                                 </div>
                                             </div><br>
                                             <div class="btn-position">
-                                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                                 <button class = "btn-add">Thêm giỏ hàng</button>
                                             </div>                    
                                         </div>
@@ -484,7 +489,7 @@
                                                 </div>
                                             </div><br>
                                             <div class="btn-position">
-                                                <button onclick="window.location.href='/direct/cashout_page.html';" class = "btn-buy">Mua Ngay</button>
+                                                <button onclick="window.location.href='cashout_page.php';" class = "btn-buy">Mua Ngay</button>
                                                 <button class = "btn-add">Thêm giỏ hàng</button>
                                             </div>                   
                                         </div>
