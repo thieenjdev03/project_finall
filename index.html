@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
@@ -36,7 +37,78 @@
                     </div> 
                     <a href="/direct/clothes.html">Quần Áo</a>
                     <a href="/direct/balo.html">Túi - Balo</a>
-                    <a href="/direct/balo.html">Thông Tin</a>
+                    <div class="dropdown">
+                        <button class="dropbtn" style="position:absolute;right:100px;"><i class="fa-sharp fa-solid fa-user" ></i> Đăng Nhập / Đăng Ký
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-login">
+                            <section class="container_login forms">
+                                <div class="form login">
+                                    <div class="form-content">
+                                        <header style = " font-size: 32px;
+                                        background: -webkit-linear-gradient(#e84c4c, #333);
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent;">Đăng Nhập</header>
+                                        <form action="#">
+                                            <div class="field input-field">
+                                                <input type="email" placeholder="Email" class="input">
+                                            </div>
+                    
+                                            <div class="field input-field">
+                                                <input type="password" placeholder="Mật Khẩu" class="password">
+                                                <i class='bx bx-hide eye-icon'></i>
+                                            </div>
+                    
+                                            <div class="form-link">
+                                                <a href="#" class="forgot-pass">Quên Mật Khẩu?</a>
+                                            </div>
+                    
+                                            <div class="field button-field">
+                                                <button>Đăng Nhập</button>
+                                            </div>
+                                        </form>
+                    
+                                        <div class="form-link">
+                                            <span>Chưa có tài khoản? <a href="#" class="link signup-link">Đăng Ký Ngay</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- Signup Form -->
+                    
+                                <div class="form signup">
+                                    <div class="form-content">
+                                        <header style = " font-size: 32px;
+                                        background: -webkit-linear-gradient(#e84c4c, #333);
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent;">Đăng Ký</header>
+                                        <form action="#">
+                                            <div class="field input-field">
+                                                <input type="email" placeholder="Email" class="input">
+                                            </div>
+                    
+                                            <div class="field input-field">
+                                                <input type="password" placeholder="Tạo mật khẩu" class="password">
+                                            </div>
+                    
+                                            <div class="field input-field">
+                                                <input type="password" placeholder="Xác nhận mật khẩu" class="password">
+                                                <i class='bx bx-hide eye-icon'></i>
+                                            </div>
+                    
+                                            <div class="field button-field">
+                                                <button>Đăng Ký</button>
+                                            </div>
+                                        </form>
+                    
+                                        <div class="form-link">
+                                            <span>Đã có tài khoản? <a href="#" class="link login-link">Đăng Nhập Ngay</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section></a>
+                        </div>
+                    </div> 
                 </div>
             </div>
             <button style="position:fixed;bottom:20px;right:10px;width: 4%;height:10%" id="cart">
@@ -72,7 +144,7 @@
             <!-- End menu-bar -->
             
         <div class="sliders">
-            <img src="img/01.png" alt="" class="image-slider">
+            <img src="img/banner-top.jpeg" alt="" class="image-slider">
             <div class="slider-top-content">
                 <img src="/img/04.png" alt="" class="slider-top-content-img">
                 <img src="/img/06.png" alt="" class="slider-top-content-img">
@@ -93,7 +165,7 @@
             <img src="/img/left&right-banner/major-league-baseball-1-logo-png-transparent.png" alt="" class="logo-brand-left"><br>
             <img src="/img/left&right-banner/Nike-Logo-Background-PNG-Image.png" alt="" class="logo-brand-left">
         </div>   -->
-        <img src="/img/09.png" alt="" class="container-top-center-img">
+        <!-- <img src="/img/09.png" alt="" class="container-top-center-img"> -->
         <div class="center">
             <div class = "rcm-products-title" >
                 <h1>Thương Hiệu MLB</h1>
@@ -506,7 +578,7 @@
             <div class="footer-col">
                 <h4>Thông Tin Dev</h4>
                 <ul>
-                <li><a href="https://www.facebook.com/nvt101203/"> <i class="fa-sharp fa-solid fa-user"></i> Nguyễn Văn Thiện</a></li>
+                <li><a href="https://www.facebook.com/nvt101203/">   Nguyễn Văn Thiện</a></li>
                 <li><a href="#"> <i class="fa-sharp fa-solid fa-id-card"></i> 2174802010394</a></li>
                 <li><a href="#"> <i class="fa-sharp fa-solid fa-envelope"></i> thien.2174802010394@vanlanguni.vn</a></li>
                 <li><a href="#"><i class="fa-sharp fa-solid fa-phone"></i> 0826426888</a></li>
@@ -526,8 +598,7 @@
         </div>
     </footer>
 </body>
-<script src="js/main.js">
-
-</script>
+<script src="js/main.js"></script>
+<script src="js/script.js"></script>
     
 </html>
