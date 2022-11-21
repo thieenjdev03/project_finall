@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Responsive Login and Signup Form </title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/login.css">
+                
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+                        
+    </head>
+    <body>
+        <section class="container_login forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header style = " font-size: 32px;
+                    background: -webkit-linear-gradient(#e84c4c, #333);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;">Đăng Nhập</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Mật Khẩu" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="form-link">
+                            <a href="#" class="forgot-pass">Quên Mật Khẩu?</a>
+                        </div>
+
+                        <div class="field button-field">
+                            <button>Đăng Nhập</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Chưa có tài khoản? <a href="#" class="link signup-link">Đăng Ký Ngay</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Signup Form -->
+
+            <div class="form signup">
+                <div class="form-content">
+                    <header style = " font-size: 32px;
+                    background: -webkit-linear-gradient(#e84c4c, #333);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;">Đăng Ký</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Tạo mật khẩu" class="password">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Xác nhận mật khẩu" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="field button-field">
+                            <button>Đăng Ký</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Đã có tài khoản? <a href="#" class="link login-link">Đăng Nhập Ngay</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- JavaScript -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

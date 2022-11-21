@@ -72,7 +72,7 @@
             <!-- End menu-bar -->
             
         <div class="sliders">
-            <img src="img/01.png" alt="" class="image-slider">
+            <img src="img/banner-top.jpeg" alt="" class="image-slider">
             <div class="slider-top-content">
                 <img src="/img/04.png" alt="" class="slider-top-content-img">
                 <img src="/img/06.png" alt="" class="slider-top-content-img">
@@ -93,9 +93,9 @@
             <img src="/img/left&right-banner/major-league-baseball-1-logo-png-transparent.png" alt="" class="logo-brand-left"><br>
             <img src="/img/left&right-banner/Nike-Logo-Background-PNG-Image.png" alt="" class="logo-brand-left">
         </div>   -->
-        <img src="/img/09.png" alt="" class="container-top-center-img">
+        <!-- <img src="/img/09.png" alt="" class="container-top-center-img"> -->
         <div class="center">
-            <div class = "rcm-products-title">
+            <div class = "rcm-products-title" >
                 <h1>Thương Hiệu MLB</h1>
                 <div >
                 <a class="link-to-detail" href="/direct/mlb.html">Xem tất cả <i class="fa-solid fa-chevron-right"></i></a>
