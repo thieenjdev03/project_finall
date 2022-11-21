@@ -113,9 +113,8 @@
 
 }
     .sliders .image-slider{
-    width: 80%;
+    width: 100%;
     position: relative;
-    left:10%;
     height: 480px;
     }
     .container{
@@ -129,7 +128,6 @@
     .container-top-center-img{
         width: 80%;
         margin-left: 10%;
-        margin-bottom:-4px;
     }
     .container .left-container{
     position: absolute;
