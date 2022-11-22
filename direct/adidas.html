@@ -1,69 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport˜" content="width=device-width, initial-scale=1.0">
-    <title>ThieenJ Store - Sneaker House</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/modal.css">
-    <link rel="shortcut icon" type="image/png" href="/img/favicon.ico"/>
-    <script src="https://kit.fontawesome.com/0607d6f524.js" crossorigin="anonymous"></script>
-
-</head>
-<body>
-    <div class="main">
-        <div class="header">
-            
-<marquee direction="right"><h1 style="background-color:white;" class="store-name-top">ThieenJ Store Chuyên Bán Hàng Chính Hãng 100% Sỉ & Lẻ HCM </h1></marquee>
-            <div class="navbar">
-                <a href="/index.html"><i class="fa fa-fw fa-home"></i> Trang Chủ</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Giày Sneaker 
-                      <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                      <a href="/direct/mlb.html">MLB</a>
-                      <a href="/direct/adidas.html">Adidas</a>
-                      <a href="/direct/nike.html">Nike</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport˜" content="width=device-width, initial-scale=1.0">
+        <title>ThieenJ Store - Sneaker House</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/modal.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+        <script src="https://kit.fontawesome.com/0607d6f524.js" crossorigin="anonymous"></script>
+    
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                
+    <marquee direction="right"><h1 style="background-color:white;" class="store-name-top">ThieenJ Store Chuyên Bán Hàng Chính Hãng 100% Sỉ & Lẻ HCM </h1></marquee>
+    <!-- menu-bar -->
+                <div class="navbar-top">
+                    <div class="navbar">
+                        <a href="/index.html"><i class="fa fa-fw fa-home"></i> Trang Chủ</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">Giày Sneaker 
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="/direct/mlb.html">MLB</a>
+                              <a href="/direct/adidas.html">Adidas</a>
+                              <a href="/direct/nike.html">Nike</a>
+                            </div>
+                        </div> 
+                        <a href="/direct/clothes.html">Quần Áo</a>
+                        <a href="/direct/balo.html">Túi - Balo</a>
+                        <a href="/direct/balo.html">Thông Tin</a>
                     </div>
-                </div> 
-                <a href="/direct/clothes.html">Quần Áo</a>
-                <a href="/direct/balo.html">Túi-Balo</a>
+                </div>
+                <!-- modal-shopping-card -->
+                <button style="position:fixed;bottom:20px;right:10px;width: 4%;height:10%" id="cart">
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                    Giỏ Hàng
+                </button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Giỏ Hàng</h5>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                <span class="cart-price cart-header cart-column">Giá</span>
+                                <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                            </div>
+                            <div class="cart-items">
+    
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0$</span>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                                <a href="cashout_page.php" class="checkout-btn">
+                                    <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                                </a>  
+                            </div>
+                        </div>
+                        </div>
+    
+                    </div> 
             </div>
-            <button style="position:fixed;bottom:20px;right:10px;width: 4%;height:10%" id="cart">
-                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-                Giỏ Hàng
-            </button>
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Giỏ Hàng</h5>
-                        <span class="close">&times;</span>
-                    </div>
-                    <div class="modal-body">
-                        <div class="cart-row">
-                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
-                            <span class="cart-price cart-header cart-column">Giá</span>
-                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
-                        </div>
-                        <div class="cart-items">
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary close-footer">Đóng</button>
-                            <button type="button" class="btn btn-primary order">Thanh Toán</button>
-                        </div>
-                    </div>
-                    </div>
-
-                </div> 
-        </div>
-            <!-- End menu-bar --> 
-        <div class="sliders">
-            <img src="/img/banner-top.jpeg" alt="" class="image-slider">
-        </div>
     <!-- END Header -->
     </div>
     <div class="container">
