@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<title>Popup Modal Box</title>-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/modal-box.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  </head>
+  <body>
+    <section>
+        <button class="button-modal-box1 show-modal">Mua Hàng</button>
+        <span class="overlay"></span>
+        <div class="modal-box">
+          <i class="fa-solid fa-circle-xmark"></i>
+          <h2>Thông Báo</h2>
+          <h3>Quý Khách Vui Lòng Đăng Nhập Để Mua Hàng</h3>
+  
+          <div class="button-modal-box">
+            <button class="button-modal-box1" onclick="window.location.href='/direct/login_form.php';">Đăng Nhập Ngay</button>
+          </div>
+        </div>
+      </section>
+
+    <script>
+        const section = document.querySelector("section"),
+        overlay = document.querySelector(".overlay"),
+        showBtn = document.querySelector(".show-modal"),
+        closeBtn = document.querySelector(".close-btn");
+        
+        showBtn.addEventListener("click", () => section.classList.add("active"));
+        
+        overlay.addEventListener("click", () =>
+        section.classList.remove("active")
+        );
+        
+        closeBtn.addEventListener("click", () =>
+        section.classList.remove("active")
+        );
+    </script>
+  </body>
+</html>
+
